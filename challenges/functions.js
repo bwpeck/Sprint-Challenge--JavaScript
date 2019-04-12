@@ -17,14 +17,14 @@ function consume(num1, num2, cb) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 function add(num1, num2) {
-  return num1 + num2;
-}
+  return num1 + num2
+};
 function multiply(num1, num2) {
-  return num1 * num2;
-}
+  return num1 * num2
+};
 
 function greeting(num1, num2) {
-return "hello " + num1 + " " + num2 + " nice to meet you."};
+return "hello " + num1 + " " + num2 + ", nice to meet you."};
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
 consume(10,16,multiply); // 160

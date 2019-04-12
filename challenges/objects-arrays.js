@@ -75,7 +75,7 @@ let universities= [];
 let schoolNames = graduates.forEach(function(i){
   universities.push(i.university)
 });
-console.log(universities.sort(0));
+console.log(universities.sort());
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -117,7 +117,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 let animalNames = []
-let names = zooanimals.forEach(function(i){
+let names = zooAnimals.forEach(function(i){
   animalNames.push(i.animal_name + " " + i.scientific_name)
 });
 console.log(animalNames);
@@ -138,11 +138,11 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-let largerPopulation = zooAnimals.filter((lp) => {
-  return lp.population === i < 5;
-});
-console.log(largerPopulation);
-
+let largerPopulation = zooAnimals.filter( val => {
+  return val.population < 5;
+}
+  )
+console.log(largerPopulation)
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
